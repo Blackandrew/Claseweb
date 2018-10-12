@@ -1,0 +1,31 @@
+
+
+/*
+*reglas
+*declaracion  
+*selectores{
+    propiedades:valor de la propiedad;
+}
+*propiedades
+*valor de la propiedad
+*/
+
+/*selector de clase ".nombre clase"*/
+/*selector id "#nombre id"*/
+
+body{
+    background: #706fd3;
+    color: black;
+}
+
+header{
+    background: #a4b0be ;
+
+}
+
+.hola{
+    background: #70a1ff;
+}
+.lin{
+  background: #a4b0be;
+}
