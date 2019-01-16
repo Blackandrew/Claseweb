@@ -1,0 +1,77 @@
+-git = ver si esta instalado
+-git version= ver la version que se utiliza
+-git config --global user.email "correo" = configurar correo
+-git config --global user.name "nombre usuario"= configuraion de usuario
+-git config --global color.ui true = activar colores de comandos enb git
+-git config --global core.editor vim
+------------------
+comandos en terminal
+
+-cd (nombre carpeta)= mover en carpetas
+-cd .. = regresar
+-mkdir = crear carpetas
+-ls y dir = ver archivos y carpetas 
+-COPY CON archivo1.txt = para crear archivos
+--touch (nombre del archivo)
+-rm (nimbre archivo) o rm -rf (nombre del archivo o carpeta)= eliminar archivo}
+-notepad (nombre del archivo) o vim (nombre archivo)= editar un archivo
+
+-------------------------------------------
+
+comandos git
+
+--git init (nombre del repsoitorio) = crear repositorio
+--git status= para ver cambios en workingdirectori
+--git add = agregar a la estacion Staging
+--git rm --cached <archivo> = quitar de la estacion de trabajo 
+--git add -A = agregar todos los archivos existente
+--git rm -f <archivo> = para eliminar de la workin y la estacion 
+--git commit -m "mensaje" = subir al repositorio
+--git commit --amend -m "comentario"= concatenar nuevo cambios
+--git tag -a(etiqueta)-m "mensaje" = agregar etiqueta al stado actual
+--git tag <etiqueta> <nume comit> = crear etiqueta a commit deseado
+--git tag -l = ver etiquetas
+--git log = ver commit  o revisando historia de nuestro proyecto
+--git tag -d (nombre de etiqueta) = eliminar etiqueta
+--git tag -f -a "nueva etiqueta" = renombrar etiqueta
+--git log --oneline = ordenar commit
+--git log --oneline --graph = avansar en la historia del proyecto
+--git log -(numero del commit)= ver solo el commit deseado
+--git diff (nombre del commit)= ver cambios en los commit o versiones
+--git reset --soft  <sha-1>= volver los commit al estado de 2 <hace git commit>,borra los commit siguientes 
+ ejemplo tener 10 commit y borrar el 7 se perderan 8/9/10
+--git reset --mixed  <sha-1> =volver los commit al estado de 1 <hacer git add y commit>
+--git reset --hard  <sha-1> = elimina todo
+--git branch <nombre de la rama> = creacion de rama
+--git branch -l = listar ramas
+--git branch -d o -D <nombre de rama> = eliminacion de rama
+--git branch -m <nombre rama actual> <nuevo nombre>= renombrar rama
+--git checkout <nombre de la rama> o <nombre de commit> = mover en rama o commit
+--git checkout -b <"nombre de rama">= crear rama y acceder a ella a la ves
+--git merge <nombre de rama>= fusionar rama
+--git rebase <nombre de la rama>= (reescribe la historia)funsiona como merge 
+ con el detalle que sigue solo una line sin hacer vifurcaciones
+--git stash = guarda el estado 
+--git stash list= listar todos los stash
+--git stash drop <numero stash> eliminar
+--git stash apply stash@{numero de stash}=applicar de nuevo los cambios
+--git cherry-pick <numero de commit>= mover commit a otra rama
+
+---------------------------------
+comando github
+fork =clonar proyecto y agregar proyecto copia a tu repo
+--git clone <link del repositorio>
+
+--ssh-keygen -t rsa -b 4096 -C "Correo"= crear llave para enlazr a github--~
+pbcopy < ~/.ssh/id_rsa.pub= copiar llave
+--git remote add <origin se puede cambiar el nombre de origin> <link del repositorio remoto>  = añadir repositorio remoto al repo local
+--git remote -v = ver que se haya hecho los cambios
+-- git remote remove <nombre del repositorio "origin"> = eliminar conexion o enlace
+--git fetch origin master  = traer archivo del repo remoto al local
+--git merge origin/master --allow-unrelated-historie= mezclar con remote
+--git pull origin master = traer los cambios del remote al local
+--git push  origin master = subir cambios
+--git push origin master --tags
+--git push origin <nombre de la rama > subir rama al repo remoto
+--touch .gitignore = crear ignore
+--agragar el nombre del archivo en el archivo ignore
