@@ -13,19 +13,440 @@
 /*selector de clase ".nombre clase"*/
 /*selector id "#nombre id"*/
 
+/* margin: arriba abajo derecha izquierda */
+
+/* 
+justify-content:centerhacemos que se centre horizontalmente, mientras que con 
+align-items: center hacemos lo propio verticalmente */
+
 body{
-    background: #706fd3;
-    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* width: 1000px;  */
+    margin: 0 auto;
+    color:   #00FF00
+}
+/*
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}*/
+
+h2,h3,h4,h5,h6{
+
+    font-family: 'fjalla  one',sans-serif;
+    font-weight: bold;
+    letter-spacing: -.2px;
+    /*font-style: italic;*/
+}
+h1 strong{
+    color: #45aaf2;
+   
+}
+h2{
+color: #026fff;
+text-transform: uppercase;
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: bold;
+font-size: 24px;
+margin-bottom: 40px;
+text-decoration: #000000;
+
 }
 
-header{
-    background: #a4b0be ;
 
+h1{
+    
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    color: white;
+    margin:0;
+    text-align: left;
+    /*margin: 0px 50px 70px 30px*/
+    /*margin: top right bottom left;*/
+  /*  text-transform: uppercase;*/
+  /*  text-decoration:underline;*/
 }
 
-.hola{
-    background: #70a1ff;
+
+
+.portafolio{
+    
+    padding: 20px;
+    
 }
-.lin{
-  background: #a4b0be;
+
+.portafolio  article   div{
+    background: white;
+     
 }
+  
+
+.header  {
+    background: #1e1e1e ;
+    color: aliceblue;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;  
+}
+
+ol,ul{
+    margin: 0 ;
+    padding: 0;
+    list-style: none;
+   
+}
+
+figure{
+    margin: 0px;
+}
+
+
+.header  a {
+    background: #34495e;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+.menu {
+    height: inherit;
+    height: 40px;
+ 
+}
+.header ol{
+    background: #1e1e1e ;
+    display: flex;
+    height:inherit ;
+    align-items: center; 
+    /* width: 280px; */
+    
+}
+.header ol li{
+    background: #1e1e1e ; 
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+    
+.header a{
+     display: flex;
+     align-items: center;
+     height: inherit;
+     padding:20px;
+     
+}
+
+
+
+.hero{
+   
+    /* background-image:url('../Claseweb/imagenes/hero.jpg'); */
+    /* background-size:500px 300px ; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    background-color:   #1e1e1e;
+    height: 300px;
+  
+}
+.hero-left {
+     height: 300px;  
+     display: flex;
+     align-items: center; 
+  
+} 
+
+
+.hero-left h1{ 
+    font-size: 25px; 
+    line-height: 1em;
+    letter-spacing: -.2px;
+    font-weight: bold;
+    padding: 100px 10px; 
+ 
+}
+
+.hero-img{
+    object-fit: cover;
+}
+.project{
+    /* border:tamaño tipo estilo
+    
+    border-top: 10px solid red;
+     border-right: 10px solid green;
+     border-left: 10px solid orange;
+     border-bottom: 10px solid palevioletred;
+   border-top-color: blue;
+   border-top-width: 15px;
+   border-top-style: solid;
+   border-bottom-right-radius*/
+    /*margin: 100px;*/
+   /* border: 1px solid black; */
+   border-radius: 10px;
+   margin-bottom: 15px;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ .project strong{
+    font-family: 'fjalla  one',sans-serif;
+ }
+ .project h3{
+     font-size: 30px;
+     margin-top: 0;
+     margin-bottom:  10px ; 
+ }
+ .project h6{
+    margin: 5px 0;
+ }
+
+ #fecha,#url{
+    margin: 10px 0; 
+ }
+ #desc{
+     font-size: 20px;
+
+ }
+ .project-right img {
+   width: 500px;
+ }
+
+  .exp{
+     display: flex;
+     /* justify-content: space-between; */
+   
+ } 
+ .event_list{
+     /* border: 1px solid red; */
+     /* border-radius: 10px; */
+     /* margin:10px; */
+     /* justify-content: space-between; */
+     margin-bottom: 10px;
+     margin-left: 10px;
+     margin-top: 10px;
+     width: 480px;   
+     display: flex;
+     flex-wrap: wrap;
+     overflow: hidden;
+     flex-shrink: 0;
+     background:#ffffff; 
+    
+ }
+
+ .event_list-2{
+    /* border: 1px solid red; */
+    /* border-radius: 10px; */
+    /* margin:10px; */
+    /* justify-content: space-between; */
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 480px;   
+    display: flex;
+    flex-wrap: wrap; /*continua los elemntos al llegar al borde maximo*/
+    overflow: hidden;/*pone invisible los elementos que se desborda*/
+    flex-shrink: 0;
+    background:#ffffff; 
+   
+}
+ .event-imag{
+    margin: 80px;
+   
+   
+ }
+
+ .event-image-container{
+    margin: -60px;
+  
+}
+
+
+ article #prueba{
+   
+     background: #ffffff;
+     margin: 20px 30px ;
+     margin-left: -10px;
+     width: 300px;
+     position: relative;
+     padding: 20px;
+     text-align: center;
+   
+ }
+ .padre{
+     padding: 0px;
+     margin: 30px;
+ }
+ #prueba p{
+     text-align: left;
+   
+ }
+  
+ article img{
+  
+    /* height: 800px; */
+    object-fit: cover;/*ajusta la imagen a su contenedor quitandole las posibles pixeles*/
+}
+  
+
+ .event-title{
+     margin:20px;
+     
+ }
+
+ .event-url{
+    font-family: 'Oswald', sans-serif;
+     border: 1px solid;
+     padding: 5px 20px;
+     text-decoration: none;
+     color: #026fff;
+     border-radius: 10px;
+   
+ }
+
+ 
+ .contact{
+   
+    background: #026fff;
+    color: white;
+    height: 150px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;   
+    color: #FFFFFF
+ }
+
+ 
+ 
+.footer{
+    color: #ffffff;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.footer_01 p a{
+    color: #ffffff;
+}
+
+
+
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 50px ;
+    padding: 0;
+} 
+
+
+ .social-link.twitter {
+    background-image:url('../Claseweb/imagenes/twitter.svg');
+   
+    
+ } 
+ .social-link.facebook{
+    background-image: url('../Claseweb/imagenes/facebook.svg');
+   
+ }
+ .social-link.github{
+    background-image: url('../Claseweb/imagenes/github.svg');
+  
+ }
+ .social-link.instagram{
+    background-image: url('../Claseweb/imagenes/instagram.svg');
+  
+ }
+
+ .email-form input{
+      border-color: gray;
+      border-radius: 5px;
+      border-style: solid;
+      padding: 10px 20px 10px 25px;
+      background-image: url('../Claseweb/imagenes/envelope.svg');
+      background-size: 15px 15px;
+      background-repeat:no-repeat;
+      background-position-y: center;
+      background-position-x:5px;
+
+ }
+
+ .email-form button{
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px 0; 
+    width: 100px;
+    margin-top: 10px;
+    /* margin: 10px auto 0; */
+
+ }
+
+ .email-form h3{
+    font-family: 'Source Sans Pro', sans-serif;
+ }
+ 
+ .container{
+   
+     /* border: 1px solid red; */
+     width:1000px;  
+     display: inherit;
+     justify-content: inherit;
+     align-content: inherit;
+     height: inherit;
+     align-items: inherit; 
+     margin: 0 auto; 
+    
+ }
+ 
+.container figure img{
+    height: 300px;
+    width: 400px;
+}
+.container  img{
+    /* border: 1px solid red; */
+    height: 50px;
+    width: 250px;
+}
+
+.event-imagen{
+    
+    /* margin-left: -40px; */
+    /* border-radius: 20px; */
+    /* border-radius: 10px; */
+    margin-left: 25px;
+    margin: -20px ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+
+.event_list figure img{
+    width: 480px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.event_list-2 figure img{
+    width: 480px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+}
+
+.footer img{
+    vertical-align: middle;
+    width:80px; 
+    margin: 20px;
+    height: 20px;
+}
+
+ .container nav a{
+    background: #1e1e1e ; 
+   
+}
+    

@@ -6,88 +6,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CLASES PLATZY</title>
-    <link rel="icon" type="image/png" href="imagenes/favicon.png" />
-    <link rel="stylesheet" href="index.css">
-   <!-- comentariar--> 
+    <link rel="icon" type="image/png"     href="imagenes/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet"   href="index.css">
+    <!-- comentariar--> 
 
 
 </head>
 
 <body>
-    <header >
-     <div>
-       <figure>
-         <img src="imagenes/logo.png" width="200" alt="logo  de https://">
-       </figure>
-      <nav>
-        <ol id="lin">
-            <li>
-              <a href="#portafolio">PORTAFOLIO</a>
-            </li>
-            <li>
-             <a href="#experiencia">EXPERIENCIA</a>
-            </li>
-            <li>
-              <a href="#TRABAJEMOS">TRABAJEMOS JUNTOS</a>
-            </li>
-        </ol>
-     </nav>
-    </div>
+    <header class="header">
+   
+      <div class="container" >
+        
+        <!-- <figure class="logo"> -->
+            <img src="imagenes/logo.png" width="300" heigth="50" alt="logo  de https://">
+          <!-- </figure> -->
+         <nav class="menu">
+           <ol >
+               <li>
+                 <a href="#porta">PORTAFOLIO</a>
+               </li>
+               <li>
+                <a href="#experiencia">EXPERIENCIA</a>
+               </li>
+               <li>
+                 <a href="#cont">TRABAJEMOS JUNTOS</a>
+               </li>
+           </ol>
+         </nav>
+      </div>
+     
     </header>
    
-    <section class="hola">
-        <h1>
-          <STrong> 
-              <h5>PRACTICA PLATZY</h5>
-          </STrong> 
-        </h1>
-       <img src="imagenes/one.jpg" width="800" height="300" border="10" alt="one pice">
-    </section>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-left">
+          <h1>
+            <p> Hola!<strong>Soy Leonidas Estaban</strong>  Desarrollador <strong>Javascript</strong> con  pasion por la <strong>enseñanza</strong>  </p> 
+          </h1>
+          <figure>
+              <img  class="hero-img" src="imagenes/hero.jpg"  width="500" height="300"  alt="">
+          </figure>
+         </div>
+      </div>
+  </section>
    
-    <section id="portafolio">
-      <h2>PORTAFOLIO</h2>
-       <article>
-        <h3>PLATZY VIDEO</h3>
-        <H6>REACT NATIVE /  REACT</H6>
-        <P><small><strong>Fecha:</strong> 01/07/2018</small></P>
-        <P><small><strong>Puedes verlo en:</strong> www.platzi.com </small></P>
-        <P>Todos sabemos que las copias de seguridad de nuestros datos son importantes,<br>
-              tanto si son fotografías, ficheros o código de programación. <br>
-              Las alternativas siempre son las mismas: la nube usando
-              Dropbox o Drive, <br>
-              en local usando discos duros aparte de los que empleamos para nuestro uso diario</P>
+    <section class="portafolio" id="porta">
+     
+     <div class="container">
+
+
+       <h2>PORTAFOLIO (PROYECTOS DESTACADOS)</h2>
+        <article class="project"  >
+ 
+         <div class="project-left">
+          
+           <h3 class="project1.0">PLATZY VIDEO</h3>
+           <h6 class="project-course">REACT NATIVE /  REACT</h6>
+           <P id="fecha"><small><strong>Fecha:</strong> 01/07/2018</small></P>
+           <P id="url"><small><strong>Puedes verlo en:</strong> www.platzi.com </small></P>
+           <P id="desc">Todos sabemos que las copias de seguridad de nuestros datos son importantes,<br>
+                 tanto si son fotografías, ficheros o código de programación. <br>
+                 Las alternativas siempre son las mismas: la nube usando
+                 Dropbox o Drive, <br>
+                 en local usando discos duros aparte de los que empleamos para nuestro uso diario</P>
+               </div >
+ 
+ 
+               <div class="project-right">
+                 <figure class="project-image">
+                   <img class="project-image1" src="imagenes/platzi-video-react-native.png" width="600"  >
+                </figure>
+             
+              </div>
          </article>     
-         <img src="imagenes/platzi-conf.jpg" width="500" alt="">
+        
+     </div>
     </section>
-  
-    <h2>Mas sobre mi experiencia</h2> 
-    <section id="experiencia" >
-        <article>
-             <h3>PLATZI LINUX 2018</h3>
-             <P>Linux es un sistema operativo de software libre (no es propiedad de ninguna persona o empresa), <br>
-                por ende no es necesario comprar una licencia para instalarlo y utilizarlo en un equipo informático. <br>
-                 Es un sistema multitarea, multiusuario, compatible con UNIX, <br>
-                  y proporciona una interfaz de comandos y una interfaz gráfica, <br>
-                que lo convierte en un sistema muy atractivo y con estupendas perspectivas de futuro.</P>
-             <figure>
-                <img src="imagenes/platzi-video-react-native.png"   width="500" alt="">
-             </figure>
+    <section class="portafolio">
+     
+        <div class="container">
+   
+   
+          <h2>PORTAFOLIO (PROYECTOS DESTACADOS)</h2>
+           <article class="project"  >
+    
+            <div class="project-left">
+             
+              <h3 class="project1.0">PLATZY VIDEO</h3>
+              <h6 class="project-course">REACT NATIVE /  REACT</h6>
+              <P id="fecha"><small><strong>Fecha:</strong> 01/07/2018</small></P>
+              <P id="url"><small><strong>Puedes verlo en:</strong> www.platzi.com </small></P>
+              <P id="desc">Todos sabemos que las copias de seguridad de nuestros datos son importantes,<br>
+                    tanto si son fotografías, ficheros o código de programación. <br>
+                    Las alternativas siempre son las mismas: la nube usando
+                    Dropbox o Drive, <br>
+                    en local usando discos duros aparte de los que empleamos para nuestro uso diario</P>
+                  </div >
+    
+    
+                  <div class="project-right">
+                    <figure class="project-image">
+                      <img class="project-image1" src="imagenes/platzi-video-react-native.png" width="600"  >
+                   </figure>
+                
+                 </div>
+            </article>     
            
-             <a href="https://www.hazunaweb.com/curso-de-html/imagenes/" target="_blank">Ver Plática</a>
-           </article>     
-    </section>
+        </div>
+       </section>
+    
+    <div class="container">
+      
+      <h2 class="padre" id="experiencia">Mas sobre mi experiencia</h2> 
+    </div>
    
+    <section class="exp" >
+     <div class="container">
+
+       <article class="event_list" >
+          <div class="event-imag">
+             <figure class="event-image-container" >
+             <img  class="event-imagen" src="imagenes/platzi-conf.jpg"   width="600" >
+             </figure>
+            
+              <div id="prueba">
   
-    <section id="TRABAJEMOS" class="lin" >
-        <h3>¿creamos algo junto?</h3>
-      <form action="/suscripcion/">
-        <label for="email">Déjanos tu email</label>
-        <input type="datetime" placeholder="Déjanos tu email" value="@gmail.com" id="email">
-        <button>Enviar</button>
-      </form>
+                 <h3 class="event-title">PLATZI LINUX 2018</h3>
+                   <P class="event-description">Linux es un sistema operativo de software libre (no es propiedad de ninguna persona o empresa), <br>
+                        por ende no es necesario comprar una licencia para instalarlo y utilizarlo en un equipo informático. <br>
+                         Es un sistema multitarea, multiusuario, compatible con UNIX, <br>
+                          y proporciona una interfaz de comandos y una interfaz gráfica, <br>
+                        que lo convierte en un sistema muy atractivo y con estupendas perspectivas de futuro.</P>
+                             
+                   <div>
+                   <a  class="event-url" href="https://www.hazunaweb.com/curso-de-html/imagenes/" target="_blank">Ver Plática</a>   
+                  </div>
+             </div>
+           </div>
+  
+       </article>
+  
+       <article class="event_list-2" >
+           <div class="event-imag">
+              <figure class="event-image-container" >
+              <img  class="event-imagen" src="imagenes/platzi-conf.jpg"   >
+              </figure>
+             
+               <div id="prueba">
+  
+                  <h3 class="event-title">PLATZI LINUX 2018</h3>
+                    <P class="event-description">Linux es un sistema operativo de software libre (no es propiedad de ninguna persona o empresa), <br>
+                         por ende no es necesario comprar una licencia para instalarlo y utilizarlo en un equipo informático. <br>
+                          Es un sistema multitarea, multiusuario, compatible con UNIX, <br>
+                           y proporciona una interfaz de comandos y una interfaz gráfica, <br>
+                         que lo convierte en un sistema muy atractivo y con estupendas perspectivas de futuro.</P>
+                              
+                    <div>
+                    <a  class="event-url" href="https://www.hazunaweb.com/curso-de-html/imagenes/" target="_blank">Ver Plática</a>   
+                   </div>
+              </div>
+            </div>
+  
+        </article>
+       
+     </div>
+
+    
+ 
+    </section>
+      
    
+    <section  class="contact" id="cont" >
+        <div class="container">
+
+          <form class="email-form"  action="/suscripcion/">
+            <h3>¿creamos algo junto? </h3>
+            <!-- <label  for="email">Déjanos tu email</label> -->
+           <!--  <input type="datetime" placeholder="Déjanos tu email" value="@gmail.com" id="email">-->
+           <input type="datetime"  value="@gmail.com" id="email">
+            <button>Enviar</button>
+           </form >
+             
+         
+              <a href="https://twitter.com/leonidasestaban" class="social-link twitter"></a>
+              <a href="https://facebook.com/leonidas.esteban" class="social-link facebook"></a>
+              <a href="https://github.com/leonidasesteban" class="social-link github"></a>
+              <a href="https://instagran.com/leonidasesteban" class="social-link instagram"></a>
+    
+         
+           
+        </div>
+           
+    
+    </section> 
+
+    <section class="footer">
+     <div class="container">
+       
+       <footer >
+          <div>
+            <p>CURSO DE DESARROLLO WEB ONLINE 2018 <Img src="../Claseweb/imagenes/platzi.png" width="80"   alt="playtzy"></Img></p>
+          </div>
+          <div class="footer_01">
+            <p>Designe with <\3 by <a href="https://twitter.com/thepianartist">@thespianartist</a>  </p>
+          </div>
+        </footer>
+     </div>
+      
+
+    </section>
+
 
 </body>
- <footer>footer</footer>
-</section> 
+
 </html
